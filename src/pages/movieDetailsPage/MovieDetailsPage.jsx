@@ -29,7 +29,7 @@ export default function MovieDetailsPage() {
             }
         };
         fetchMovieDetails();
-    }, [movieid]);
+    }, [movieId]);
 
     useEffect(() => {
         if (backLinkRef.current) {
