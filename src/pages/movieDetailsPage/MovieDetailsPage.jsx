@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import Loader from "../../components/loader/Loader";
 import axios from "axios";
-import { useParams, Outlet, Navlink, Link, useLocation } from "react-router-dom";
+import { useParams, Outlet, NavLink, Link, useLocation } from "react-router-dom";
 import css from "./MovieDetailsPage.module.css";
 
 export default function MovieDetailsPage() {
@@ -70,16 +70,16 @@ export default function MovieDetailsPage() {
                 </div>
             </div>
             <div className={css["btn-links"]}>
-                <Navlink
+                <NavLink
                 to={`/movies/${movieid}/cast`}
                 className={css["btn-links-item"]}
-                >Cast</Navlink>
-                <Navlink
+                >Cast</NavLink>
+                <NavLink
                 to={`/movies/${movieid}/reviews`}
                 className={css["btn-links-item"]}
                 >
                     Reviews
-                </Navlink>
+                </NavLink>
             </div>
             <Outlet />
         </div>
