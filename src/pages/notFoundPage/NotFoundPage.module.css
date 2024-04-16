@@ -1,0 +1,14 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-text {
+    color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #92e3a9;
+  margin-top: 20px;
+  font-size: 30px;
+}
