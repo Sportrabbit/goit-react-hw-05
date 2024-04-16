@@ -43,7 +43,7 @@ export default function MovieCast() {
                             {actor.profile_path ? (
                                 <img src={`https://image.tmdb.org/t/p/w200/${actor.profile_path}`} 
                                 alt={actor.name} />
-                            )}
+                            ) : null}
                             {actor.name}
                         </div>
                     </li>
