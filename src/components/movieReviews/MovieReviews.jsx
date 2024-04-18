@@ -3,7 +3,7 @@ import { useParams} from "react-router-dom";
 import axios from "axios";
 import css from "./MovieReviews.module.css";
 
-export default function MovieCast() {
+export default function MovieReviews() {
     const [reviews, setReviews] = useState([]);
     const [error, setError] = useState(null);
     const {movieId} = useParams();

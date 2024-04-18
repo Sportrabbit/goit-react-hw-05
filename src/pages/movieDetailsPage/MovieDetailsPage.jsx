@@ -33,7 +33,7 @@ export default function MovieDetailsPage() {
 
     useEffect(() => {
         if (location.state && location.state.from) {
-            backLinkRef.current = React.createRef();
+            backLinkRef.current = location.state.from;
         }
     }, [location.state]);
 
