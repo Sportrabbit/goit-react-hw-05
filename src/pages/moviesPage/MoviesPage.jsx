@@ -15,7 +15,7 @@ export default function MoviePage() {
     useEffect(() => {
         const query = searchParams.get("search");
         if (query) {
-            searchQuery(query);
+            setSearchQuery(query);
             fetchMovies(query);
         }
     }, [searchParams]);

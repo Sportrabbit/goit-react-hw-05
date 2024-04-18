@@ -12,7 +12,7 @@ export default function MovieCast() {
         const fetchReviews = async () => {
             try {
                 const res = await axios.get(
-                    `https://api.themoviedb.org/3/movie/${movieId}/credits?language=en-US`,
+                    `https://api.themoviedb.org/3/movie/${movieId}/reviews?language=en-US`,
                     {
                         headers: {
                             Authorization:

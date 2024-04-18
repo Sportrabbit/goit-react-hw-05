@@ -32,10 +32,10 @@ export default function MovieDetailsPage() {
     }, [movieId]);
 
     useEffect(() => {
-        if (backLinkRef.current) {
-            backLinkRef.current.focus();
+        if (location.state && location.state.from) {
+            backLinkRef.current = React.createRef();
         }
-    }, [location]);
+    }, [location.state]);
 
     if (!movie || !movie.title) {
         return <Loader/>
@@ -71,11 +71,11 @@ export default function MovieDetailsPage() {
             </div>
             <div className={css["btn-links"]}>
                 <NavLink
-                to={`/movies/${movieid}/cast`}
+                to={`/movies/${movieId}/cast`}
                 className={css["btn-links-item"]}
                 >Cast</NavLink>
                 <NavLink
-                to={`/movies/${movieid}/reviews`}
+                to={`/movies/${movieId}/reviews`}
                 className={css["btn-links-item"]}
                 >
                     Reviews
