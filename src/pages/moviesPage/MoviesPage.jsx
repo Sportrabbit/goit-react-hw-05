@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import MovieList from "../../components/movieList/MovieList";
 import Loader from "../../components/loader/Loader";
 import axios from "axios";
-import css from "./MoviePage.module.css";
+import css from "./MoviesPage.module.css";
 
 export default function MoviePage() {
     const [movies, setMovies] = useState([]);

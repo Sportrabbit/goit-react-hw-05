@@ -6,7 +6,7 @@ import css from "./MovieDetailsPage.module.css";
 
 export default function MovieDetailsPage() {
     const [movie, setMovie] = useState({});
-    const {movieid} = useParams();
+    const { movieId } = useParams();
     const location = useLocation();
     const backLinkRef = useRef(null);
 

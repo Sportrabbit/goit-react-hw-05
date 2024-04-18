@@ -23,7 +23,7 @@ export default function MovieCast() {
                 );
                 setReviews(res.data.results);
             } catch (error) {
-                setError("Something went wrong, try again", error)
+                setError("Something went wrong, try again");
             }
         };
         fetchReviews();
